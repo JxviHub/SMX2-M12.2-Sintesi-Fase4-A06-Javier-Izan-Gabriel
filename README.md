@@ -22,6 +22,7 @@
 
 Las IPs que se utilizan para los servidorrs son IPs grandes, por ejemplo __192.168.16.200__ o __192.168.16.254__ ya que se considera una IP alta de la 200 a la 254, todo lo que entre en ese rango lo consideraremos una IP alta.
 
+![U+200E](https://github.com/JxviHub/SMX2-M12.2-Sintesi-Fase4-A06-Javier-Izan-Gabriel/blob/main/Fotoservidor.png "imagen")
 
 Las IPs que utilizamos para las puertas de enlace son las mas bajas, es decir las que asignaremos al ruter, por ejemplo si el ruter tiene una ip __192.168.16.1__ nuestra puerta de enlace sear esa.
 
