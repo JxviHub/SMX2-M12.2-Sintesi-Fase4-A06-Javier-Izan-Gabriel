@@ -18,9 +18,11 @@
 |Clase B |172.16.0.0 a 172.31.255.255 |
 |Clase C |192.168.0.0 a 192.168.255.255 |
 
-#### Quines IP's s'utilitzen per a servidors i quines ip's per a portes d'enllaç. 
+#### Que IPs se utilizan para servidores y cuales IPs para puertas de enlace. 
 
+Las IPs que se utilizan para los servidorrs son IPs grandes, por ejemplo __192.168.16.200__ o __192.168.16.254__ ya que se considera una IP alta de la 200 a la 254, todo lo que entre en ese rango lo consideraremos una IP alta.
 
+Las IPs que utilizamos para las puertas de enlace son las mas bajas, es decir las que asignaremos al ruter, por ejemplo si el ruter tiene una ip __192.168.16.1__ nuestra puerta de enlace sear esa.
 
 #### VERSIONES ANTERIORES A LA 17.10
 
