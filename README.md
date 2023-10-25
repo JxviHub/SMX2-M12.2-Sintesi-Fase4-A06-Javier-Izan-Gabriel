@@ -3,11 +3,26 @@
 #### Clasificacion de las IP's
 
 |Clase de la IP |Desde-Hasta |Mascara de red |
-|----------|:----------:|----------:|
-|Clase A |0.0.0.0 a 127.255.255.255 |255.0.0.0 /8 |
+|----------|:----------:|:----------|
+|Clase A |0.0.0.0 a 127.255.255.255 |255.0.0.0  /8 |
+|Clase B |128.0.0.0 a 191.255.255.255 |255.255.0.0  /16 |
+|Clase C |192.0.0.0 a 223.255.255.255 |255.255.255.0  /24 |
+|Clase D |224.0.0.0 a 239.255.255.255 |Multicast |
+|Clase E |240.0.0.0 a 255.255.255.255 |Reservadas para uso futuro |
+
+#### Clasificacion de las IP's privadas
+
+|Clase de la IP |Desde-Hasta |
+|----------|:----------:|
+|Clase A |10.0.0.0 a 10.255.255.255 |
+|Clase B |172.16.0.0 a 172.31.255.255 |
+|Clase C |192.168.0.0 a 192.168.255.255 |
+
+#### Quines IP's s'utilitzen per a servidors i quines ip's per a portes d'enllaç. 
 
 
-## VERSIONES ANTERIORES A LA 17.10
+
+#### VERSIONES ANTERIORES A LA 17.10
 
 Utilizaremos el comando **"nano \etc\network\interfaces"** para entrar en la configuracion de las redes.
 El comando **nano** se utiliza para entrar o modificar el archivo.
@@ -46,7 +61,7 @@ Para configurar el servidor DNS desberemos poner la siguiente direccion **ficher
 
 [(E+200U)"imagen"]
 
-## VERSIONES POSTERIORES A LA 17.10
+#### VERSIONES POSTERIORES A LA 17.10
 
 Estas versiones utilizan netplan.
  
