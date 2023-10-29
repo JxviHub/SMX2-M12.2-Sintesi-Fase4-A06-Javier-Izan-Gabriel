@@ -2,6 +2,8 @@
 
 #### Clasificacion de las IP's
 
+Hay 5 clases de IP y la clasififcacion se basa en la cantidad de bits que se utilizan para indentificar la red y el host. Por ejemplo en la clase A los primeros 8 bits se utilizan para identificar la red y los 24 restantes para el host.
+
 |Clase de la IP |Desde-Hasta |Mascara de red |
 |----------|:----------:|:----------|
 |Clase A |0.0.0.0 a 127.255.255.255 |255.0.0.0  /8 |
