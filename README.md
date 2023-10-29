@@ -2,7 +2,10 @@
 
 #### Clasificacion de las IP's
 
-Hay 5 clases de IP y la clasififcacion se basa en la cantidad de bits que se utilizan para indentificar la red y el host. Por ejemplo en la clase A los primeros 8 bits se utilizan para identificar la red y los 24 restantes para el host.
+Hay 5 clases de IP y la clasififcacion se basa en la cantidad de bits que se utilizan para indentificar la red y el host.
+Las direcciones IP pueden ser fijas o dinámicas. Las direcciones IP fijas se asignan de forma manual y no cambian, mientras que las direcciones IP dinámicas cambian cada vez que se reinicia el router.
+
+Por ejemplo en la clase A los primeros 8 bits se utilizan para identificar la red y los 24 restantes para el host.
 
 |Clase de la IP |Desde-Hasta |Mascara de red |
 |----------|:----------:|:----------|
@@ -12,7 +15,13 @@ Hay 5 clases de IP y la clasififcacion se basa en la cantidad de bits que se uti
 |Clase D |224.0.0.0 a 239.255.255.255 |Multicast |
 |Clase E |240.0.0.0 a 255.255.255.255 |Reservadas para uso futuro |
 
+Todos los dispositivos conectados a un router comparten la misma dirección IP pública esas direcciones IP públicas son visibles desde todo Internet.
+
 #### Clasificacion de las IP's privadas
+
+Las direcciones IP privadas solo operan de forma local y se utilizan para identificar a cada dispositivo conectado a una red privada, como una red doméstica o de oficina.
+
+Hay tres rangos de direcciones IP privadas que se pueden utilizar en redes privadas:
 
 |Clase de la IP |Desde-Hasta |
 |----------|:----------:|
@@ -20,13 +29,29 @@ Hay 5 clases de IP y la clasififcacion se basa en la cantidad de bits que se uti
 |Clase B |172.16.0.0 a 172.31.255.255 |
 |Clase C |192.168.0.0 a 192.168.255.255 |
 
-#### Que IPs se utilizan para servidores y cuales IPs para puertas de enlace. 
+#### Que IPs se utilizan para servidores y cuales IPs para puertas de enlace
 
-Las IPs que se utilizan para los servidorrs son IPs grandes, por ejemplo __192.168.16.200__ o __192.168.16.254__ ya que se considera una IP alta de la 200 a la 254, todo lo que entre en ese rango lo consideraremos una IP alta.
+los servidores utilizan direcciones IP públicas y IP privadas, las IP públicas para que puedan ser accesibles desde cualquier lugar de Internet y las IP privadas para IP privadas para comunicarse con otros dispositivos dentro de la red privada. Estas direcciones IP se asignan a los servidores de forma estática, lo que significa que no cambian con el tiempo.
+
+Las IPs que se utilizan para los servidorrs son IPs grandes, por ejemplo __192.168.16.200__ hasta __192.168.16.254__ ya que se considera una IP alta de la 200 a la 254, todo lo que entre en ese rango lo consideraremos una IP alta.
 
 ![U+200E](https://github.com/JxviHub/SMX2-M12.2-Sintesi-Fase4-A06-Javier-Izan-Gabriel/blob/main/Fotoservidor.png "imagen")
 
-Las IPs que utilizamos para las puertas de enlace son las mas bajas, es decir las que asignaremos al ruter, por ejemplo si el ruter tiene una ip __192.168.16.1__ nuestra puerta de enlace sear esa.
+Las puertas de enlace utilizan direcciones IP privadas y Públicas, usa las IP privadas para comunicarse con otros dispositivos dentro de la red privada y las IP públicas para permitir el acceso desde Internet.. Estas direcciones IP se asignan de forma estática o dinámica, dependiendo de la configuración de la red.
+
+Las IPs que utilizamos para las puertas de enlace son las mas bajas, es decir las que asignaremos al ruter, por ejemplo si el ruter tiene una ip __192.168.16.1__ nuestra puerta de enlace sera esa.
+
+![U+200E](https://github.com/JxviHub/SMX2-M12.2-Sintesi-Fase4-A06-Javier-Izan-Gabriel/blob/main/imagenpc.png "imagen")
+
+#### VLAN (qué es y para qué sirve, configuración en Packet Tracer)
+
+las VLAN permiten dividir la red en grupos lógicos en lugar de físicos, lo que ayuda a liberar al personal de TI de las restricciones del diseño de red y la infraestructura de cableado existente.
+
+Las VLAN son una colección de computadoras en una o varias LAN que se agrupan en un solo dominio de difusión, independientemente de su ubicación física. Esto significa que los dispositivos pueden estar ubicados en diferentes lugares físicos, pero aún así pueden comunicarse entre sí como si estuvieran en la misma ubicación física.
+
+Las VLAN facilitan el diseño, la implementación y la administración de la red al permitir que los dispositivos se agrupen según su función o patrón de tráfico, en lugar de su ubicación física. Por ejemplo, los dispositivos que necesitan comunicarse con frecuencia se pueden agrupar en una VLAN separada para mejorar el rendimiento y reducir el tráfico innecesario en la red.
+
+
 
 #### VERSIONES ANTERIORES A LA 17.10
 
