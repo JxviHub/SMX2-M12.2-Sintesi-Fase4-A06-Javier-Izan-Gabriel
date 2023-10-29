@@ -51,7 +51,7 @@ Las VLAN son una colección de computadoras en una o varias LAN que se agrupan e
 
 Las VLAN facilitan el diseño, la implementación y la administración de la red al permitir que los dispositivos se agrupen según su función o patrón de tráfico, en lugar de su ubicación física. Por ejemplo, los dispositivos que necesitan comunicarse con frecuencia se pueden agrupar en una VLAN separada para mejorar el rendimiento y reducir el tráfico innecesario en la red.
 
-
+![U+200E](https://github.com/JxviHub/SMX2-M12.2-Sintesi-Fase4-A06-Javier-Izan-Gabriel/blob/main/vlan.png "imagen")
 
 #### VERSIONES ANTERIORES A LA 17.10
 
