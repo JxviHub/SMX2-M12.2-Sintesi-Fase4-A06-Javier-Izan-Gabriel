@@ -43,6 +43,26 @@ Las IPs que utilizamos para las puertas de enlace son las mas bajas, es decir la
 
 ![U+200E](https://github.com/JxviHub/SMX2-M12.2-Sintesi-Fase4-A06-Javier-Izan-Gabriel/blob/main/imagenpc.png "imagen")
 
+#### Funcionalidad de la máscaras de red y cómo se calculan según la clasificación de IP's.
+
+Una máscara de red es una combinación de bits que permite delimitar el ámbito de una red de ordenadores1. La función de la máscara de red es indicar a todos los dispositivos qué parte de la dirección IP es la correspondiente al número de la red, a la máscara de subred y la que corresponde al host1.
+
+Las máscaras de red se utilizan para saber si una dirección IP pertenece a una subred2. Con un conjunto de 32 bits consecutivos para determinar la parte de red de una dirección y el resto de los 32 bits todos a cero para determinar la parte que identifica al host2.
+
+La división, teniendo en cuenta la clase de dirección IP, se realiza de la siguiente forma1:
+
+Clase A: Máscara de red de 8 bits (255.0.0.0)
+Clase B: Máscara de red de 16 bits (255.255.0.0)
+Clase C: Máscara de red de 24 bits (255.255.255.0)
+
+El cálculo de la máscara de subred se realiza en varios pasos12:
+
+Cantidad de subredes y notación rápida: Determina cuántas subredes necesitas y utiliza una notación rápida para representarlas.
+Calcular máscara de red y de subred: Calcula la máscara de red y la máscara de subred basándote en la cantidad de subredes que necesitas.
+Calcular cantidad de hosts por subred y el salto de red: Determina cuántos hosts pueden existir en cada subred y calcula el salto de red.
+Asignar IP a nuestras subredes: Asigna las direcciones IP a las subredes.
+Espero que esta información te sea útil. Si tienes más preguntas, no dudes en hacerlas.
+
 #### VLAN (qué es y para qué sirve, configuración en Packet Tracer)
 
 las VLAN permiten dividir la red en grupos lógicos en lugar de físicos, lo que ayuda a liberar al personal de TI de las restricciones del diseño de red y la infraestructura de cableado existente.
