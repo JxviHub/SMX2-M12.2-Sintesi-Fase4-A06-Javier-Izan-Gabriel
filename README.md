@@ -92,7 +92,7 @@ Así usaremos una máscara de red /24 por lo tanto 255.255.255.0
 
 #### Configuración de red en máquinas virtuales
 
-Para configurar la red en una máquina virtual en VirtualBox, se pueden seguir los siguientes pasos:
+Paraconfigurar la red en una máquina virtual en VirtualBox, tenemos que:
 -Seleccionar la máquina virtual deseada en la ventana de gestión de VirtualBox.
 -Hacer clic con el botón derecho sobre la máquina virtual y seleccionar la opción "Parámetros".
 -Ir a la sección "Red".
@@ -114,7 +114,7 @@ Red solo anfitrión (Host-only): La máquina virtual se conecta a una red virtua
 
 Red genérica (Generic): La máquina virtual se conecta a una red virtual interna que se puede configurar para funcionar como una red NAT, una red solo anfitrión o una red interna. Este modo es útil para configuraciones de red avanzadas.
 
-![U+200E]()
+![U+200E](https://github.com/JxviHub/SMX2-M12.2-Sintesi-Fase4-A06-Javier-Izan-Gabriel/blob/main/redVB.png "imagen")
 
 #### Configuracion de red Windows
 
