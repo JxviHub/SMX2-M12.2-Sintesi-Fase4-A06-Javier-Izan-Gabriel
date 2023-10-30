@@ -107,13 +107,15 @@ Para hacer que nos asignen una IP dinamica por DHCP, escribiremos lo siguiente e
 Para asignar una IP estatica , escribiremos lo sigueiente en el fichero **interfaces**.
 - auto enp0s3
 - iface enp0s3 inet static
-- address 192.255.255.0
+- address 192.168.1.2
 - netmask 255.255.255.0
 - gateway 192.168.1.1
 
+![U+200E](https://github.com/JxviHub/SMX2-M12.2-Sintesi-Fase4-A06-Javier-Izan-Gabriel/blob/main/CONFIGURACION16.04.png "imagen")
+
 Aqui hos dejamos una representación de como queda todo en la terminal.
 
-[(E+200E)"imagen"]
+![U+200E](https://github.com/JxviHub/SMX2-M12.2-Sintesi-Fase4-A06-Javier-Izan-Gabriel/blob/main/FINALIP16.04.png "imagen")
 
 (#) -> funciona para comentar una linea y decir que esa linea es puro texto y no lo interprete.
 
@@ -129,7 +131,7 @@ Tambien tenemos la opcion de reiniciar solo la interfaz que queremos, esta seria
 Para configurar el servidor DNS desberemos poner la siguiente direccion **fichero/etc/resolv.conf**, dentro de esta deberemos escribir lo siguiente:
 - nameserver 8.8.8.8
 
-[(E+200E)"imagen"]
+![U+200E](https://github.com/JxviHub/SMX2-M12.2-Sintesi-Fase4-A06-Javier-Izan-Gabriel/blob/main/16.04uLTIMA.png "imagen")
 
 #### Configuracion de red Ubuntu 22.04
 
@@ -144,6 +146,8 @@ Para establecer una IP estatica deberemos seguir los siguientes pasos:
 - address 192.255.255.0/24
 - gateway 192.168.1.1
 
+![U+200E]( "imagen")
+
 Despues de establecer la ip con la mascara y el gateway, establecermos el servidor, en este caso deberemos poner el nombre y la IP:
 - Google: 8.8.8.8
 
@@ -151,10 +155,10 @@ Para apolicar todos estos cambios usaremos el comando **sudo netplan apply**
 
 Aqui hos dejamos una representación de como queda todo en la terminal.
 
-[(E+200E)"imagen"]
+![U+200E]( "imagen")
 
 Para establecer una IP dinamica simplemente tendremos que poner "yes" en el apartado del dhcp y escribir el comando **sudo netplan apply** para aplicar los cambios, tras hacer esto se nos asignara una IP automaticamente.
 
 Aqui hos dejamos una representación de como queda todo en la terminal.
 
-[(E+200E)"imagen"]
+![U+200E]( "imagen")
