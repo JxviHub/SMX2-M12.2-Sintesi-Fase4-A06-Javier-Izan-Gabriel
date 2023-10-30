@@ -78,11 +78,11 @@ Configuración en Packet tracer:
   
 Es bastante sencillo, la red consistirá en 6 ordenadores, 2 switches y la red dividida en 3 VLANS.
 
-![U+200E]()
+![U+200E](https://github.com/JxviHub/SMX2-M12.2-Sintesi-Fase4-A06-Javier-Izan-Gabriel/blob/main/Vlan2.png "imagen")
 
 Debemos realizar la conexión de los Switches y las PCs. Los switches se conectan por la interfaz Fa3/1 de cada uno de ellos con cable cruzado y en modo trunk  
 
-![U+200E]()
+![U+200E](https://github.com/JxviHub/SMX2-M12.2-Sintesi-Fase4-A06-Javier-Izan-Gabriel/blob/main/Vlan3.png "imagen")
 
 Para asignar las IPs y la máscara de Red de nuestros equipos haremos doble click en la interfaz gráfica en cada uno de ellos en IP configuration introducimos la IP y su máscara de red. 
 
