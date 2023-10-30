@@ -94,19 +94,19 @@ Así usaremos una máscara de red /24 por lo tanto 255.255.255.0
 
 Para acceder a la configuracion dinamica de Windows abriremos el CMD. Para liberar la IP usaremos el comando: ipconfig/release. Asi podremos cambiar la IP. En el CMD veremos lo siguiente:
 
-![U+200E]( "imagen")
+![U+200E](https://github.com/JxviHub/SMX2-M12.2-Sintesi-Fase4-A06-Javier-Izan-Gabriel/blob/main/ConfiguracionWindowsdinamica.png "imagen")
 
 Una vez hemos liberado la IP, tendremos que usar este comando: ipconfig/renew. Esta IP sirve para solicitar una nueva IP al servidor DNS. Una vez se ejecute el comando veremos lo siguiente:
 
-![U+200E]( "imagen")
+![U+200E](https://github.com/JxviHub/SMX2-M12.2-Sintesi-Fase4-A06-Javier-Izan-Gabriel/blob/main/Configuracionfinalwindoes.png "imagen")
 
 Para acceder a la configuracion estatica dentro de Windows iremos a __Configuracion__, dentro de configuracion veremos la opcion de __Red e Internet__, Una vez dentro iremos a __Ethernet__. Nos saldra lo siguiente: 
 
-![U+200E]( "imagen")
+![U+200E](https://github.com/JxviHub/SMX2-M12.2-Sintesi-Fase4-A06-Javier-Izan-Gabriel/blob/main/ConfiguracionWindows.png "imagen")
 
 Le daremos a __Editar__ en el apartado __Asignación de IP__ y seleccionaremos __Manual__. Veremos lo siguiente:
 
-![U+200E]( "imagen")
+![U+200E](https://github.com/JxviHub/SMX2-M12.2-Sintesi-Fase4-A06-Javier-Izan-Gabriel/blob/main/configuracionwindowsmanual.png "imagen")
 
 #### Configuracion de red Ubuntu 16.04
 
