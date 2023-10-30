@@ -90,6 +90,32 @@ El Gateway y DNS no son necesarios en este ejemplo.
 
 Así usaremos una máscara de red /24 por lo tanto 255.255.255.0
 
+#### Configuración de red en máquinas virtuales
+
+Para configurar la red en una máquina virtual en VirtualBox, se pueden seguir los siguientes pasos:
+-Seleccionar la máquina virtual deseada en la ventana de gestión de VirtualBox.
+-Hacer clic con el botón derecho sobre la máquina virtual y seleccionar la opción "Parámetros".
+-Ir a la sección "Red".
+-Seleccionar el tipo de red deseado, como adaptador puente, NAT, red interna o red solo anfitrión.
+-Configurar las opciones de red específicas para el tipo de red seleccionado.
+-Reiniciar la máquina virtual para que los cambios surtan efecto.
+
+VirtualBox permite simular hasta ocho interfaces de red virtuales por máquina virtual, de las cuales solo cuatro se pueden configurar mediante la interfaz gráfica. Las otras interfaces de red se pueden configurar utilizando la herramienta VBoxManage.
+
+Diferentes configuraciones de los adapatdores de red:
+
+Adaptador puente (Bridge): Se crea una tarjeta de red virtual en la máquina virtual que se conecta directamente a la red física del host. La máquina virtual se comporta como si estuviera conectada directamente a la red física, lo que permite que la máquina virtual tenga su propia dirección IP y se comunique con otros dispositivos en la red.
+
+NAT: VirtualBox actúa como un router entre la máquina virtual y la red externa. La máquina virtual se conecta a una red virtual interna, y VirtualBox traduce las direcciones IP de la máquina virtual a una dirección IP de la red externa. Esto permite que la máquina virtual tenga acceso a Internet, pero no permite que otros equipos de la red externa se conecten directamente a la máquina virtual.
+
+Red interna: Se crea una red virtual interna que conecta varias máquinas virtuales. Las máquinas virtuales pueden comunicarse entre sí, pero no pueden conectarse a la red externa.
+
+Red solo anfitrión (Host-only): La máquina virtual se conecta a una red virtual interna que solo está disponible para el host y otras máquinas virtuales en la misma red. La máquina virtual no tiene acceso a la red externa.
+
+Red genérica (Generic): La máquina virtual se conecta a una red virtual interna que se puede configurar para funcionar como una red NAT, una red solo anfitrión o una red interna. Este modo es útil para configuraciones de red avanzadas.
+
+![U+200E]()
+
 #### Configuracion de red Windows
 
 Para acceder a la configuracion dinamica de Windows abriremos el CMD. Para liberar la IP usaremos el comando: ipconfig/release. Asi podremos cambiar la IP. En el CMD veremos lo siguiente:
