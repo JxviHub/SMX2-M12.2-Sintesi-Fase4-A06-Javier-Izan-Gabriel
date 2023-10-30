@@ -51,9 +51,11 @@ Las máscaras de red se utilizan para saber si una dirección IP pertenece a una
 
 La división, teniendo en cuenta la clase de dirección IP, se realiza de la siguiente forma:
 
-Clase A: Máscara de red de 8 bits (255.0.0.0)
-Clase B: Máscara de red de 16 bits (255.255.0.0)
-Clase C: Máscara de red de 24 bits (255.255.255.0)
+|Clase de la IP |Desde-Hasta |
+|----------|:----------:|
+|Clase A: |Máscara de red de 8 bits (255.0.0.0) |
+|Clase B: |Máscara de red de 16 bits (255.255.0.0) |
+|Clase C: |Máscara de red de 24 bits (255.255.255.0) |
 
 El cálculo de la máscara de subred se realiza de la siguiente forma:
 
@@ -71,6 +73,22 @@ Las VLAN son una colección de computadoras en una o varias LAN que se agrupan e
 Las VLAN facilitan el diseño, la implementación y la administración de la red al permitir que los dispositivos se agrupen según su función o patrón de tráfico, en lugar de su ubicación física. Por ejemplo, los dispositivos que necesitan comunicarse con frecuencia se pueden agrupar en una VLAN separada para mejorar el rendimiento y reducir el tráfico innecesario en la red.
 
 ![U+200E](https://github.com/JxviHub/SMX2-M12.2-Sintesi-Fase4-A06-Javier-Izan-Gabriel/blob/main/vlan.png "imagen")
+
+Configuración en Packet tracer: 
+  
+Es bastante sencillo, la red consistirá en 6 ordenadores, 2 switches y la red dividida en 3 VLANS.
+
+![U+200E]()
+
+Debemos realizar la conexión de los Switches y las PCs. Los switches se conectan por la interfaz Fa3/1 de cada uno de ellos con cable cruzado y en modo trunk  
+
+![U+200E]()
+
+Para asignar las IPs y la máscara de Red de nuestros equipos haremos doble click en la interfaz gráfica en cada uno de ellos en IP configuration introducimos la IP y su máscara de red. 
+
+El Gateway y DNS no son necesarios en este ejemplo. 
+
+Así usaremos una máscara de red /24 por lo tanto 255.255.255.0
 
 #### VERSIONES ANTERIORES A LA 17.10
 
