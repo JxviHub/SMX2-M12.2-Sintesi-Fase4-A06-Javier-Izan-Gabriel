@@ -118,7 +118,7 @@ Para hacer que nos asignen una IP dinamica por DHCP, escribiremos lo siguiente e
 - auto enp0s3
 - iface enp0s3 inet dhcp
 
-[(E+200E)"imagen"]
+![U+200E]()
 
 Para asignar una IP estatica , escribiremos lo sigueiente en el fichero **interfaces**.
 - auto enp0s3
