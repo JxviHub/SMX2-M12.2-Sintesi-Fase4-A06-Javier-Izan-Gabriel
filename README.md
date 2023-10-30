@@ -92,6 +92,22 @@ Así usaremos una máscara de red /24 por lo tanto 255.255.255.0
 
 #### Configuracion de red Windows
 
+Para acceder a la configuracion dinamica de Windows abriremos el CMD. Para liberar la IP usaremos el comando: ipconfig/release. Asi podremos cambiar la IP. En el CMD veremos lo siguiente:
+
+![U+200E]( "imagen")
+
+Una vez hemos liberado la IP, tendremos que usar este comando: ipconfig/renew. Esta IP sirve para solicitar una nueva IP al servidor DNS. Una vez se ejecute el comando veremos lo siguiente:
+
+![U+200E]( "imagen")
+
+Para acceder a la configuracion estatica dentro de Windows iremos a __Configuracion__, dentro de configuracion veremos la opcion de __Red e Internet__, Una vez dentro iremos a __Ethernet__. Nos saldra lo siguiente: 
+
+![U+200E]( "imagen")
+
+Le daremos a __Editar__ en el apartado __Asignación de IP__ y seleccionaremos __Manual__. Veremos lo siguiente:
+
+![U+200E]( "imagen")
+
 #### Configuracion de red Ubuntu 16.04
 
 Utilizaremos el comando **"nano \etc\network\interfaces"** para entrar en la configuracion de las redes.
@@ -143,10 +159,10 @@ En caso de que no exista el fichero usaremos el comando **sudo netplan generate*
 
 Para establecer una IP estatica deberemos seguir los siguientes pasos:
 - dhcp4 : no (En caso de que usemos IPv6 lo pondremos en el dhcp6)
-- address 192.255.255.0/24
+- address 192.168.1.2/24
 - gateway 192.168.1.1
 
-![U+200E]( "imagen")
+![U+200E](https://github.com/JxviHub/SMX2-M12.2-Sintesi-Fase4-A06-Javier-Izan-Gabriel/blob/main/Estatica22.04.png "imagen")
 
 Despues de establecer la ip con la mascara y el gateway, establecermos el servidor, en este caso deberemos poner el nombre y la IP:
 - Google: 8.8.8.8
@@ -155,10 +171,10 @@ Para apolicar todos estos cambios usaremos el comando **sudo netplan apply**
 
 Aqui hos dejamos una representación de como queda todo en la terminal.
 
-![U+200E]( "imagen")
+![U+200E](https://github.com/JxviHub/SMX2-M12.2-Sintesi-Fase4-A06-Javier-Izan-Gabriel/blob/main/Finalip22.04.png "imagen")
 
 Para establecer una IP dinamica simplemente tendremos que poner "yes" en el apartado del dhcp y escribir el comando **sudo netplan apply** para aplicar los cambios, tras hacer esto se nos asignara una IP automaticamente.
 
 Aqui hos dejamos una representación de como queda todo en la terminal.
 
-![U+200E]( "imagen")
+![U+200E](https://github.com/JxviHub/SMX2-M12.2-Sintesi-Fase4-A06-Javier-Izan-Gabriel/blob/main/configuraciondinamica22.04.png "imagen")
