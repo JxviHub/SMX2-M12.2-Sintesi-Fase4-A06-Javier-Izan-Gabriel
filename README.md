@@ -90,7 +90,9 @@ El Gateway y DNS no son necesarios en este ejemplo.
 
 Así usaremos una máscara de red /24 por lo tanto 255.255.255.0
 
-#### VERSIONES ANTERIORES A LA 17.10
+#### Configuracion de red Windows
+
+#### Configuracion de red Ubuntu 16.04
 
 Utilizaremos el comando **"nano \etc\network\interfaces"** para entrar en la configuracion de las redes.
 El comando **nano** se utiliza para entrar o modificar el archivo.
@@ -100,7 +102,7 @@ Para hacer que nos asignen una IP dinamica por DHCP, escribiremos lo siguiente e
 - auto enp0s3
 - iface enp0s3 inet dhcp
 
-[(E+200U)"imagen"]
+[(E+200E)"imagen"]
 
 Para asignar una IP estatica , escribiremos lo sigueiente en el fichero **interfaces**.
 - auto enp0s3
@@ -111,7 +113,7 @@ Para asignar una IP estatica , escribiremos lo sigueiente en el fichero **interf
 
 Aqui hos dejamos una representación de como queda todo en la terminal.
 
-[(E+200U)"imagen"]
+[(E+200E)"imagen"]
 
 (#) -> funciona para comentar una linea y decir que esa linea es puro texto y no lo interprete.
 
@@ -127,9 +129,9 @@ Tambien tenemos la opcion de reiniciar solo la interfaz que queremos, esta seria
 Para configurar el servidor DNS desberemos poner la siguiente direccion **fichero/etc/resolv.conf**, dentro de esta deberemos escribir lo siguiente:
 - nameserver 8.8.8.8
 
-[(E+200U)"imagen"]
+[(E+200E)"imagen"]
 
-#### VERSIONES POSTERIORES A LA 17.10
+#### Configuracion de red Ubuntu 22.04
 
 Estas versiones utilizan netplan.
  
@@ -149,10 +151,10 @@ Para apolicar todos estos cambios usaremos el comando **sudo netplan apply**
 
 Aqui hos dejamos una representación de como queda todo en la terminal.
 
-[(E+200U)"imagen"]
+[(E+200E)"imagen"]
 
 Para establecer una IP dinamica simplemente tendremos que poner "yes" en el apartado del dhcp y escribir el comando **sudo netplan apply** para aplicar los cambios, tras hacer esto se nos asignara una IP automaticamente.
 
 Aqui hos dejamos una representación de como queda todo en la terminal.
 
-[(E+200U)"imagen"]
+[(E+200E)"imagen"]
