@@ -96,11 +96,17 @@ Así usaremos una máscara de red /24 por lo tanto 255.255.255.0
 ## Configuración de red en máquinas virtuales
 
 Paraconfigurar la red en una máquina virtual en VirtualBox, tenemos que:
+
 -Seleccionar la máquina virtual deseada en la ventana de gestión de VirtualBox.
+
 -Hacer clic con el botón derecho sobre la máquina virtual y seleccionar la opción "Parámetros".
+
 -Ir a la sección "Red".
+
 -Seleccionar el tipo de red deseado, como adaptador puente, NAT, red interna o red solo anfitrión.
+
 -Configurar las opciones de red específicas para el tipo de red seleccionado.
+
 -Reiniciar la máquina virtual para que los cambios surtan efecto.
 
 VirtualBox permite simular hasta ocho interfaces de red virtuales por máquina virtual, de las cuales solo cuatro se pueden configurar mediante la interfaz gráfica. Las otras interfaces de red se pueden configurar utilizando la herramienta VBoxManage.
