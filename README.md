@@ -1,6 +1,6 @@
 # SMX2-M12.2-Sintesi-Fase4-A06
 
-#### Clasificacion de las IP's
+## Clasificacion de las IP's
 
 Hay 5 clases de IP y la clasififcacion se basa en la cantidad de bits que se utilizan para indentificar la red y el host.
 Las direcciones IP pueden ser fijas o dinámicas. Las direcciones IP fijas se asignan de forma manual y no cambian, mientras que las direcciones IP dinámicas cambian cada vez que se reinicia el router.
@@ -17,7 +17,7 @@ Por ejemplo en la clase A los primeros 8 bits se utilizan para identificar la re
 
 Todos los dispositivos conectados a un router comparten la misma dirección IP pública esas direcciones IP públicas son visibles desde todo Internet.
 
-#### Clasificacion de las IP's privadas
+## Clasificacion de las IP's privadas
 
 Las direcciones IP privadas solo operan de forma local y se utilizan para identificar a cada dispositivo conectado a una red privada, como una red doméstica o de oficina.
 
@@ -29,7 +29,7 @@ Hay tres rangos de direcciones IP privadas que se pueden utilizar en redes priva
 |Clase B |172.16.0.0 a 172.31.255.255 |
 |Clase C |192.168.0.0 a 192.168.255.255 |
 
-#### Que IPs se utilizan para servidores y cuales IPs para puertas de enlace
+## Que IPs se utilizan para servidores y cuales IPs para puertas de enlace
 
 los servidores utilizan direcciones IP públicas y IP privadas, las IP públicas para que puedan ser accesibles desde cualquier lugar de Internet y las IP privadas para IP privadas para comunicarse con otros dispositivos dentro de la red privada. Estas direcciones IP se asignan a los servidores de forma estática, lo que significa que no cambian con el tiempo.
 
@@ -43,7 +43,7 @@ Las IPs que utilizamos para las puertas de enlace son las mas bajas, es decir la
 
 ![U+200E](https://github.com/JxviHub/SMX2-M12.2-Sintesi-Fase4-A06-Javier-Izan-Gabriel/blob/main/imagenpc.png "imagen")
 
-#### Funcionalidad de la máscaras de red y cómo se calculan según la clasificación de IP's.
+## Funcionalidad de la máscaras de red y cómo se calculan según la clasificación de IP's.
 
 Una máscara de red es una combinación de bits que permite delimitar el ámbito de una red de ordenadores1. La función de la máscara de red es indicar a todos los dispositivos qué parte de la dirección IP es la correspondiente al número de la red, a la máscara de subred y la que corresponde al host.
 
@@ -64,7 +64,7 @@ El cálculo de la máscara de subred se realiza de la siguiente forma:
 -Calcular cantidad de hosts por subred y el salto de red: Determina cuántos hosts pueden existir en cada subred y calcula el salto de red.
 -Asignar IP a nuestras subredes: Asigna las direcciones IP a las subredes.
 
-#### VLAN (qué es y para qué sirve, configuración en Packet Tracer)
+## VLAN (qué es y para qué sirve, configuración en Packet Tracer)
 
 las VLAN permiten dividir la red en grupos lógicos en lugar de físicos, lo que ayuda a liberar al personal de TI de las restricciones del diseño de red y la infraestructura de cableado existente.
 
@@ -90,7 +90,7 @@ El Gateway y DNS no son necesarios en este ejemplo.
 
 Así usaremos una máscara de red /24 por lo tanto 255.255.255.0
 
-#### Configuración de red en máquinas virtuales
+## Configuración de red en máquinas virtuales
 
 Paraconfigurar la red en una máquina virtual en VirtualBox, tenemos que:
 -Seleccionar la máquina virtual deseada en la ventana de gestión de VirtualBox.
@@ -116,7 +116,7 @@ Red genérica (Generic): La máquina virtual se conecta a una red virtual intern
 
 ![U+200E](https://github.com/JxviHub/SMX2-M12.2-Sintesi-Fase4-A06-Javier-Izan-Gabriel/blob/main/redVB.png "imagen")
 
-#### Configuracion de red Windows
+## Configuracion de red Windows
 
 Para acceder a la configuracion dinamica de Windows abriremos el CMD. Para liberar la IP usaremos el comando: ipconfig/release. Asi podremos cambiar la IP. En el CMD veremos lo siguiente:
 
@@ -134,7 +134,7 @@ Le daremos a __Editar__ en el apartado __Asignación de IP__ y seleccionaremos _
 
 ![U+200E](https://github.com/JxviHub/SMX2-M12.2-Sintesi-Fase4-A06-Javier-Izan-Gabriel/blob/main/configuracionwindowsmanual.png "imagen")
 
-#### Configuracion de red Ubuntu 16.04
+## Configuracion de red Ubuntu 16.04
 
 Utilizaremos el comando **"nano \etc\network\interfaces"** para entrar en la configuracion de las redes.
 El comando **nano** se utiliza para entrar o modificar el archivo.
@@ -175,7 +175,7 @@ Para configurar el servidor DNS desberemos poner la siguiente direccion **ficher
 
 ![U+200E](https://github.com/JxviHub/SMX2-M12.2-Sintesi-Fase4-A06-Javier-Izan-Gabriel/blob/main/16.04uLTIMA.png "imagen")
 
-#### Configuracion de red Ubuntu 22.04
+## Configuracion de red Ubuntu 22.04
 
 Estas versiones utilizan netplan.
  
