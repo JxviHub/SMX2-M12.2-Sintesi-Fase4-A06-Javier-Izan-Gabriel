@@ -45,9 +45,9 @@ Las IPs que utilizamos para las puertas de enlace son las mas bajas, es decir la
 
 #### Funcionalidad de la máscaras de red y cómo se calculan según la clasificación de IP's.
 
-Una máscara de red es una combinación de bits que permite delimitar el ámbito de una red de ordenadores1. La función de la máscara de red es indicar a todos los dispositivos qué parte de la dirección IP es la correspondiente al número de la red, a la máscara de subred y la que corresponde al host1.
+Una máscara de red es una combinación de bits que permite delimitar el ámbito de una red de ordenadores1. La función de la máscara de red es indicar a todos los dispositivos qué parte de la dirección IP es la correspondiente al número de la red, a la máscara de subred y la que corresponde al host.
 
-Las máscaras de red se utilizan para saber si una dirección IP pertenece a una subred2. Con un conjunto de 32 bits consecutivos para determinar la parte de red de una dirección y el resto de los 32 bits todos a cero para determinar la parte que identifica al host.
+Las máscaras de red se utilizan para saber si una dirección IP pertenece a una subred. Con un conjunto de 32 bits consecutivos para determinar la parte de red de una dirección y el resto de los 32 bits todos a cero para determinar la parte que identifica al host.
 
 La división, teniendo en cuenta la clase de dirección IP, se realiza de la siguiente forma:
 
