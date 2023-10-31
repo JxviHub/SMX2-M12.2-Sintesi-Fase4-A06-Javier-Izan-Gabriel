@@ -59,10 +59,10 @@ La división, teniendo en cuenta la clase de dirección IP, se realiza de la sig
 
 El cálculo de la máscara de subred se realiza de la siguiente forma:
 
-Cantidad de subredes y notación rápida: Determina cuántas subredes necesitas y utiliza una notación rápida para representarlas.
-Calcular máscara de red y de subred: Calcula la máscara de red y la máscara de subred basándote en la cantidad de subredes que necesitas.
-Calcular cantidad de hosts por subred y el salto de red: Determina cuántos hosts pueden existir en cada subred y calcula el salto de red.
-Asignar IP a nuestras subredes: Asigna las direcciones IP a las subredes.
+-Cantidad de subredes y notación rápida: Determina cuántas subredes necesitas y utiliza una notación rápida para representarlas.
+-Calcular máscara de red y de subred: Calcula la máscara de red y la máscara de subred basándote en la cantidad de subredes que necesitas.
+-Calcular cantidad de hosts por subred y el salto de red: Determina cuántos hosts pueden existir en cada subred y calcula el salto de red.
+-Asignar IP a nuestras subredes: Asigna las direcciones IP a las subredes.
 
 #### VLAN (qué es y para qué sirve, configuración en Packet Tracer)
 
